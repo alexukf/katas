@@ -112,18 +112,18 @@ public class ValueOfRomanNumeralsTest {
 	//~~~~~~ Production code ~~~~~~
 
 	public int getCurrentSymbolContextValue(char firstSymbol, char secondSymbol) {
-		int substractionResult;
+		int currentSymbolContextValue;
 
 		int firstSymbolValue = getSymbolValue(firstSymbol);
 		int secondSymbolValue = getSymbolValue(secondSymbol);
 
 		if (firstSymbolValue < secondSymbolValue) {
-			substractionResult = -firstSymbolValue;
+			currentSymbolContextValue = -firstSymbolValue;
 		} else {
-			substractionResult = firstSymbolValue;
+			currentSymbolContextValue = firstSymbolValue;
 		}
 
-		return substractionResult;
+		return currentSymbolContextValue;
 	}
 
 	public int getSymbolValue(char romanNumeral) {
